@@ -1,0 +1,56 @@
+.show {
+  transform: translateX(-100%);
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $clr-white;
+  display: flex;
+  flex-direction: column;
+  transition: all $transition;
+
+  @include md {
+    transform: translateX(-100%);
+  }
+
+  .toggle-btn {
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .sidebar-links {
+    align-self: center;
+    margin: auto 0;
+
+    ul {
+      font-size: 1.5rem;
+
+      li {
+        margin-bottom: 1rem;
+
+        a {
+          color: $clr-black;
+          transition: all $transition;
+          display: block;
+          padding: 0.15rem 3rem;
+          text-align: center;
+
+          &:hover {
+            background-color: rebeccapurple;
+            color: $clr-white;
+          }
+        }
+      }
+    }
+  }
+}

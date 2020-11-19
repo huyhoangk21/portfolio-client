@@ -28,7 +28,8 @@
         display: flex;
 
         li {
-          margin: 0 1rem;
+          margin-left: 2rem;
+
           a {
             color: $clr-black;
             transition: all $transition;
@@ -49,6 +50,11 @@
       cursor: pointer;
       font-size: 1.5rem;
       display: flex;
+      transition: all $transition;
+
+      &:hover {
+        color: $clr-primary;
+      }
 
       @include md {
         display: none;
